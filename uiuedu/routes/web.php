@@ -26,4 +26,9 @@ Route::get("/adminlogin",[AdminController::class,"login"]);
 
 
 
+Route::get('/studentlogin', 'App\Http\Controllers\StudentController@studentlogin')->name('studentlogin');
+Route::post('/studentlogin', 'App\Http\Controllers\studentController@studentloginPost')->name('studentlogin');
+
+
+
 
