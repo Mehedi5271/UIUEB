@@ -23,6 +23,7 @@ Route::get('/', function () {
 Route::get("/home",[HomeController::class,"index"]);
 
 Route::get("/adminlogin",[AdminController::class,"login"]);
+Route::get("/counselling",[CounsellingController::class,"counselling"]);
 
 
 
