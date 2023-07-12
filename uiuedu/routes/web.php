@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\IndexController;
 
 
 /*
@@ -23,6 +24,8 @@ Route::get('/', function () {
 Route::get("/home",[HomeController::class,"index"]);
 
 Route::get("/adminlogin",[AdminController::class,"login"]);
+
+Route::get("/index",[IndexController::class,"dashboard"]);
 
 
 
