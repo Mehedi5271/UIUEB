@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\IndexController;
 
 
 /*
@@ -29,6 +30,8 @@ Route::get("/counselling",[CounsellingController::class,"counselling"]);
 
 Route::get('/studentlogin', 'App\Http\Controllers\StudentController@studentlogin')->name('studentlogin');
 Route::post('/studentlogin', 'App\Http\Controllers\studentController@studentloginPost')->name('studentlogin');
+
+Route::get("/index",[IndexController::class,"dashboard"]);
 
 
 
